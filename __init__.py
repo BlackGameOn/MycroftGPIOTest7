@@ -6,7 +6,7 @@ class LedControlcu(MycroftSkill):
         MycroftSkill.__init__(self)
         
 
-    @intent_handler('temperature.cpu.intent')
+    @intent_handler('ledled.intent')
     def handle_led_ifade(self, message):
         try:
             python //home//pi//kerems//LED_AC.py
