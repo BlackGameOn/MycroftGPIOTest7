@@ -8,11 +8,7 @@ class LedControlcu(MycroftSkill):
 
     @intent_handler('temperature.cpu.intent')
     def handle_led_ifade(self, message):
-        try:
-            python //home//pi//kerems//LED_AC.py
-            self.speak("Led is On") 
-        except:
-            self.speak("Led Operation İs Failed BlackGame")
+    self.speak("Led is On") 
 
 def create_skill():
     return LedControlcu()
