@@ -8,9 +8,12 @@ class CpuTemperature(MycroftSkill):
 
     @intent_handler('temperature.cpu.intent')
     def handle_temperature_cpu(self, message):
-        python //home//pi//kerems//LED_AC.py
-        self.speak_dialog('temperature.cpu.dialog') 
+        try:
+            python //home//pi//kerems//LED_AC.py
+            self.speak("Led is On") 
 
 def create_skill():
     return CpuTemperature()
+
+
 
